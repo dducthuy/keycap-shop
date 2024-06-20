@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/icons8-heart-96.png">
+
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>keycap</title>
+
+    <script>
+        const data_pr = [
+            { name: "switch", info: "SWITCH MMD CREAM V4 - ÂM CREAMY", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/1-1717905151861.png?v=1717905157950", price: "1.300.000₫" },
+            { name: "switch", info: "SWITCH KAILH MX BCP - LINEAR CLACKY", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/1-1715924917634.png?v=1715924924880", price: "1.300.000₫" },
+            { name: "switch", info: "SWITCH MZ Z1 - LINEAR", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/1-1696133505980.png?v=1696133512800", price: "1.500.000₫" },
+            { name: "switch", info: "SWITCH KTT JACARANDA - LINEAR", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/z4599790500986-521f7c5d063b42ff004bab37a6cad3a0-1691912730671.jpg?v=1691912748637", price: "1.200.000₫" },
+            { name: "switch", info: "SWITCH PH MILK TEA", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/z4665911846548-caf195ca8b716852bab3284e027333f5-1693910335528.jpg?v=1693910340810", price: "1.100.000₫" },
+            { name: "switch", info: "SWITCH KTT MATCHA - TACTILE", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/z4159888312327-95d1c823d6d09960336f1c749dc8a15b-1678089582257.jpg?v=1678089608247", price: "900.000₫" },
+            { name: "switch", info: "SWITCH PH ANIY R2 - LINEAR", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/1-1690609672054.png?v=1690609679970", price: "800.000₫" },
+            { name: "switch", info: "SWITCH KTT JACARANDA - LINEAR", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/z4599790500986-521f7c5d063b42ff004bab37a6cad3a0-1691912730671.jpg?v=1691912748637", price: "1.200.000₫" },
+            { name: "switch", info: "SWITCH PH MILK TEA", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/z4665911846548-caf195ca8b716852bab3284e027333f5-1693910335528.jpg?v=1693910340810", price: "1.100.000₫" },
+            { name: "switch", info: "SWITCH KTT MATCHA - TACTILE", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/z4159888312327-95d1c823d6d09960336f1c749dc8a15b-1678089582257.jpg?v=1678089608247", price: "900.000₫" },
+            { name: "switch", info: "SWITCH PH ANIY R2 - LINEAR", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/1-1690609672054.png?v=1690609679970", price: "800.000₫" },
+            { name: "switch", info: "SWITCH MMD CREAM V4 - ÂM CREAMY", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/1-1717905151861.png?v=1717905157950", price: "1.300.000₫" },
+            { name: "switch", info: "SWITCH KAILH MX BCP - LINEAR CLACKY", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/1-1715924917634.png?v=1715924924880", price: "1.300.000₫" },
+            { name: "switch", info: "SWITCH MZ Z1 - LINEAR", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/1-1696133505980.png?v=1696133512800", price: "1.500.000₫" },
+            { name: "switch", info: "SWITCH KTT JACARANDA - LINEAR", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/z4599790500986-521f7c5d063b42ff004bab37a6cad3a0-1691912730671.jpg?v=1691912748637", price: "1.200.000₫" },
+            { name: "switch", info: "SWITCH PH MILK TEA", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/z4665911846548-caf195ca8b716852bab3284e027333f5-1693910335528.jpg?v=1693910340810", price: "1.100.000₫" },
+            { name: "switch", info: "SWITCH KTT MATCHA - TACTILE", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/z4159888312327-95d1c823d6d09960336f1c749dc8a15b-1678089582257.jpg?v=1678089608247", price: "900.000₫" },
+            { name: "switch", info: "SWITCH PH ANIY R2 - LINEAR", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/1-1690609672054.png?v=1690609679970", price: "800.000₫" },
+            { name: "switch", info: "SWITCH KTT JACARANDA - LINEAR", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/z4599790500986-521f7c5d063b42ff004bab37a6cad3a0-1691912730671.jpg?v=1691912748637", price: "1.200.000₫" },
+            { name: "switch", info: "SWITCH PH MILK TEA", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/z4665911846548-caf195ca8b716852bab3284e027333f5-1693910335528.jpg?v=1693910340810", price: "1.100.000₫" },
+            { name: "switch", info: "SWITCH KTT MATCHA - TACTILE", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/z4159888312327-95d1c823d6d09960336f1c749dc8a15b-1678089582257.jpg?v=1678089608247", price: "900.000₫" },
+            { name: "switch", info: "SWITCH PH ANIY R2 - LINEAR", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/1-1690609672054.png?v=1690609679970", price: "800.000₫" },
+
+
+        ]
+
+        // hàm loadsp
+        document.addEventListener("DOMContentLoaded", function () {
+            function displayprs(arr, idname) {
+                const displaypr = document.getElementById(idname);
+                if (!displaypr) return; // Kiểm tra idname hợp lệ
+
+                let html = "";
+                arr.map((item) => {
+                    html += `
+            <div class="product_it">
+                <a href="">
+                <img class="pr_img" src="${item.img}" alt="ảnh">
+                <div class="pr_info">
+                    <h2>${item.name}</h2>
+                    <h3>${item.info}</h3>
+                    <em>${item.price}</em>
+                </div>
+
+                </a>
+            </div>`;
+                });
+
+                displaypr.innerHTML = html;
+            }
+
+            displayprs(data_pr, "pr_list_new");
+            displayprs(data_pr, "pr_list_keycap");
+            displayprs(data_pr, "pr_list_phimco");
+
+            // slide product
+            function next(listpr, widthpr, numberpr, vt) {
+                vt -= widthpr;
+                vt = Math.max(vt, -widthpr * (listpr.children.length - numberpr));
+                listpr.style.transform = `translateX(${vt}px)`;
+                return vt;
+            }
+
+            function prev(listpr, widthpr, numberpr, vt) {
+                vt += widthpr;
+                vt = Math.min(vt, 0);
+                listpr.style.transform = `translateX(${vt}px)`;
+                return vt;
+            }
+
+            function setupCarousel(btnRightId, btnLeftId, listClass) {
+                const listpr = document.querySelector(listClass);
+                const lsproducts = listpr.querySelectorAll(".product_it");
+                if (lsproducts.length === 0) return;
+
+                const widthpr = lsproducts[0].offsetWidth + 12;
+                const numberpr = 5;
+                let vt = 0;
+
+                document.getElementById(btnRightId).addEventListener("click", function () {
+                    vt = next(listpr, widthpr, numberpr, vt);
+                });
+
+                document.getElementById(btnLeftId).addEventListener("click", function () {
+                    vt = prev(listpr, widthpr, numberpr, vt);
+                });
+            }
+
+            setupCarousel("btn-right-new", "btn-left-new", "#pr_list_new");
+            setupCarousel("btn-right-keycap", "btn-left-keycap", "#pr_list_keycap");
+            setupCarousel("btn-right-phimco", "btn-left-phimco", "#pr_list_phimco");
+        });
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="main">
+        <div id="header">
+
+            <div class="header_head">
+                <ul class="item-list">
+                    <li class="it1">
+                        <a href="#">
+                            <i class="ico fb fa-brands fa-facebook"></i>
+                        </a>
+                        <span>ducthuy</span>
+                    </li>
+                    <li class="it2">
+                        <img src="assets/img/logo.webp" alt="ảnh">
+                    </li>
+                    <li class="it3">
+
+                        <a id="btn-login">Đăng Nhập
+
+                        </a>
+                        <a href="">Giỏ Hàng
+                            <i class="ico fa-solid fa-bag-shopping"></i>
+                        </a>
+
+                        <a href="">
+                            <i class="ico fa-solid fa-magnifying-glass"></i>
+
+                        </a>
+
+                    </li>
+                </ul>
+
+            </div>
+
+            <nav class="header_nav">
+                <ul class="nav-list">
+                    <li><a href="#"> trang chủ</a></li>
+                    <li class="pd-left"><a href="">
+                            Keycap <i class=" fa-solid fa-chevron-down"></i></a>
+                        <ul class="subnav">
+                            <li><a href="">cherry</a></li>
+                            <li><a href="">Xuyên Led</a></li>
+                            <li><a href="">XDA</a></li>
+                            <li><a href="">ODM</a></li>
+                        </ul>
+                    </li>
+                    <li class="pd-left"><a href="">Phím full</a></li>
+                    <li class="pd-left"><a href="">chuột</a></li>
+                    <li class="pd-left"><a href="">sản phẩm <i class=" fa-solid fa-chevron-down"></i></a>
+
+                        <ul class="subnav">
+                            <li><a href="">Phím cơ</a></li>
+                            <li><a href="">Chuột</a></li>
+                            <li><a href="">KeyCap</a></li>
+                            <li><a href="">Switch</a></li>
+                            <li><a href="">Decor</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="pd-left"><a href="">bài viết</a></li>
+                    <li class="pd-left"><a href="">Về kicap</a></li>
+
+
+
+                </ul>
+
+            </nav>
+
+
+
+        </div>
+        <div id="content">
+            <div class="content_slide">
+                <img id="list-img" src="assets/img/slider_2.webp" alt="anh">
+            </div>
+
+
+            <div id="content_product">
+                <!-- sp mới -->
+                <div class="product pr_new  ">
+                    <div class="pro_header">sản phẩm mới</div>
+                    <button class="control-btn prev-btn" id="btn-left-new">❮</button>
+                    <button class="control-btn next-btn" id="btn-right-new">❯</button>
+
+                    <div id="pr_list_new" class="pr_list">
+
+                    </div>
+
+                </div>
+                <!--Bộ sưu tập keycap Cherry  -->
+
+                <div class="product pr_new  ">
+                    <div class="pro_header">Bộ sưu tập keycap Cherry</div>
+                    <button class="control-btn prev-btn" id="btn-left-keycap"> ❮</button>
+                    <button class="control-btn next-btn" id="btn-right-keycap">❯</button>
+
+                    <div id="pr_list_keycap" class="pr_list">
+
+                    </div>
+
+                </div>
+                <!--Switch cho bàn phím cơ  -->
+                <div class="product pr_new  ">
+                    <div class="pro_header">Switch cho bàn phím cơ</div>
+                    <button class="control-btn prev-btn" id="btn-left-phimco">❮</button>
+                    <button class="control-btn next-btn" id="btn-right-phimco">❯</button>
+
+                    <div id="pr_list_phimco" class="pr_list">
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div id="footer">
+            <div class="box_f">
+                <ul>
+                    <img src="" alt="">
+                </ul>
+                <ul>
+                    <li class="f_item">
+                        <h2>HỘ KINH DOANH KICAP</h2>
+                        <i class="fa-solid fa-heart"></i>
+                        Chứng nhận số:
+                        <br> 01A8035150 do phòng TC-KH
+                        <br>UBND quận Ba Đình cấp ngày
+                        <br> 07/11/2023
+                        <br> <i class="fa-solid fa-location-dot"></i>
+                        38, ngõ 575 Kim Mã, Ba Đình, Hà Nội
+                        <br><i class="fa-solid fa-phone"></i>
+                        0981572384
+                        <br><i class="fa-solid fa-envelope"></i>
+                        doducthuy@gmail.com
+
+                    </li>
+                    <li class="f_item">
+                        <h2>CHÍNH SÁCH KHÁCH HÀNG</h2>
+                        CHÍNH SÁCH BẢO HÀNH
+                        <br> CHÍNH SÁCH KIỂM HÀNG
+                        <br> CHÍNH SÁCH ĐỔI TRẢ HÀNG HOÀN TIỀN
+                        <br> CHÍNH SÁCH THANH TOÁN
+                        <br> CHÍNH SÁCH BẢO MẬT
+                        <br> CHÍNH SÁCH VẬN CHUYỂN
+
+
+                    </li>
+                    <li class="f_item">
+                        <h2>ĐĂNG KÝ NHẬN TIN</h2>
+
+                        Mua bàn phím cơ, keycap bộ, keycap lẻ, keycap resin
+                        <br> Bảo hành chính hãng. Ưu đãi khi mua online
+                        <br> Dịch vụ mods phím cơ uy tín, chất lượng.
+                        <div class="f_input">
+                            <input type="text" placeholder="Email của bạn">
+                            <br> <button class="f_btn">Đăng Ký</button>
+
+
+                        </div>
+                        <img src="assets/img/img_product/payment_1.svg" alt=""><img
+                            src="assets/img/img_product/payment_2.svg" alt=""><img
+                            src="assets/img/img_product/payment_3.svg" alt="">
+
+
+                    </li>
+                    <li class="f_item">
+                        <h2>Mạng Xã hội</h2>
+                        <a href="#"> <i class="f_ico fa-brands fa-youtube"></i> </a>
+                        <a href="#"> <i class="f_ico fa-brands fa-instagram"></i> </a>
+                        <a href="#"> <i class="f_ico fa-brands fa-telegram"></i> </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+        <div id="modal">
+            <div class="modal_overlay">
+                <div class="modal_content">
+                    <div class="content_header">
+                        <h2 class="">Đăng Nhập</h2>
+                        <span id="close">Thoát</span>
+                    </div>
+                    <div class="content_body">
+
+                        <div class="box">
+                            <div class="it_1">
+                                <img class="b_logo" src="assets/img/logo.webp" alt="">
+                            </div>
+
+                            <div class="it_2">
+                                <input class="b_input" placeholder="Email của bạn/Tên Đăng Nhập/SĐT" type="text">
+                            </div>
+                            <div class="it_3">
+
+                                <input class="b_input" placeholder="Mật Khẩu" type="text">
+                            </div>
+                            <div class="it_4">
+
+                                <button class="b_btn">Đăng Nhập</button>
+                            </div>
+                            <div class="it_5">
+                                <a href="">Quyên mật khẩu</a>
+                                <a href="signin.html">Đăng ký</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_footer">
+                        <div class="line"></div>
+                        <div class="f_box">
+                            <button class="f_btn">
+                                <i class="f_btn-fb fa-brands fa-facebook"></i>
+                                Facebook
+                            </button>
+
+                            <button class="f_btn">
+                                <i class="f_btn-g fa-brands fa-google"></i>
+                                Google
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+<script>
+    const array = ["assets/img/slider_1.webp", "assets/img/slider_2.webp", "assets/img/slider_3.webp", "assets/img/slider_4.webp"];
+    let currentIndex = 0;
+
+    function loadimg() {
+        currentIndex = (currentIndex + 1) % array.length;
+        document.getElementById("list-img").src = array[currentIndex];
+    }
+    setInterval(loadimg, 3000);
+    //Event Login
+    document.getElementById("btn-login").addEventListener("click", function () {
+        const modal = document.getElementById("modal");
+        modal.style.display = "block";
+    });
+    document.getElementById("close").addEventListener("click", function () {
+        const modal = document.getElementById("modal");
+        modal.style.display = "none";
+    });
+
+
+</script>
+
+</html>
