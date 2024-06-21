@@ -1,10 +1,10 @@
 /* header */
-/* #header{
-    /* top: 0;
+#header {
     position: fixed;
-   width: 100%;
-   background-color: white;
-   z-index: 2; */
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+}
 
 .item-list a {
     text-decoration: none;
@@ -90,7 +90,6 @@
 .header_nav .nav-list>li {
     list-style: none;
     text-transform: uppercase;
-
     position: relative;
 
 }
@@ -116,13 +115,11 @@
     list-style: none;
     background-color: black;
     top: 100%;
-    width: 90px;
+    width: 140px;
     height: auto;
-
     padding-top: 17px;
     display: none;
     border-radius: 3px;
-    ;
 
 }
 
@@ -136,7 +133,9 @@
 
 .nav-list .subnav li {
     border-bottom: 1px solid white;
-    /* Optional: adds a border between items */
+    height: 30px;
+    display: flex;
+    align-items: center;
 }
 
 /* ************ */
@@ -153,6 +152,7 @@
 .content_slide {
     width: 100%;
     height: auto;
+    top: 1;
 
 
 }
@@ -160,7 +160,7 @@
 .content_slide img {
     height: 360px;
     width: 100%;
-
+    padding-top: 60px;
 }
 
 /* ************ */
@@ -304,6 +304,10 @@
 
 }
 
+.f_box .f_btn:hover {
+    color: black;
+}
+
 .f_item a {
 
     text-decoration: none;
@@ -359,11 +363,12 @@
 
 }
 
-.content_header span {
+.content_header button {
     cursor: pointer;
+    width: 50px;
 }
 
-.content_header span:hover {
+.content_header button:hover {
     color: red;
 }
 
@@ -450,6 +455,8 @@
 
 .b_input {
     padding: 5px;
+    outline: none;
 }
+
 
 /* and login */
