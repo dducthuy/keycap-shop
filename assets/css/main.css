@@ -207,6 +207,13 @@
     height: auto;
 }
 
+.pr_img:hover {
+    transform: scale(1.1);
+    /* Phóng to ảnh lên 1.2 lần khi hover */
+    transition: all 0.3s ease;
+    /* Thời gian chuyển tiếp 0.3s */
+}
+
 .control-btn {
     position: absolute;
     top: 50%;
