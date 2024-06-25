@@ -51,7 +51,7 @@ function displays(arr, id) {
     let html = "";
     arr.map((item) => {
         html += ` <div class="product_it">
-                    <a href="">
+                    <a href="pr-details.html">
                         <img class="pr_img"
                             src="${item.img}"
                             alt="ảnh">
