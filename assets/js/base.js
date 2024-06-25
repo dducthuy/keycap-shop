@@ -41,6 +41,29 @@ const data_pr = [
 
 ]
 
+const mouse = [
+    { name: "Chuột", info: "CHUỘT KHÔNG DÂY DELUX M800 ULTRA", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/2-a86490ea-205b-4ba7-8fff-0ded7ea48554-1710261046552.png?v=1710261081957", price: "1.300.000₫" },
+    { name: "Chuột", info: "CHUỘT KHÔNG DÂY ATTACK SHARK X3", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/5-1702372754543.png?v=1709118955690", price: "1.300.000₫" },
+    { name: "Chuột", info: "CHUỘT KHÔNG DÂY DELUX M800 ULTRA", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/1-1696133505980.png?v=1696133512800", price: "1.500.000₫" },
+    { name: "Chuột", info: "CHUỘT KHÔNG DÂY ATTACK SHARK X3", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/8-1702372754586.png?v=1709118955690", price: "1.200.000₫" },
+    { name: "Chuột", info: "CHUỘT KHÔNG DÂY ATTACK SHARK X3", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/at7-jpeg-1702372754595.jpg?v=1709118955690", price: "1.100.000₫" },
+    { name: "Chuột", info: "CHUỘT KHÔNG DÂY ATTACK SHARK X3", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/8-1702372754586.png?v=1709118955690", price: "900.000₫" },
+    { name: "Chuột", info: "CHUỘT KHÔNG DÂY ATTACK SHARK X3", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/1-1690609672054.png?v=1690609679970", price: "800.000₫" },
+    { name: "Chuột", info: "CHUỘT KHÔNG DÂY ATTACK SHARK X3", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/8-1702372754586.png?v=1709118955690", price: "1.200.000₫" },
+    { name: "Chuột", info: "CHUỘT KHÔNG DÂY ATTACK SHARK X3", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/at7-jpeg-1702372754595.jpg?v=1709118955690", price: "1.100.000₫" },
+    { name: "Chuột", info: "CHUỘT KHÔNG DÂY ATTACK SHARK X3", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/8-1702372754586.png?v=1709118955690", price: "900.000₫" },
+    { name: "Chuột", info: "CHUỘT KHÔNG DÂY ATTACK SHARK X3", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/at7-jpeg-1702372754595.jpg?v=1709118955690", price: "800.000₫" },
+    { name: "Chuột", info: "CHUỘT KHÔNG DÂY ATTACK SHARK X3", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/1-1717905151861.png?v=1717905157950", price: "1.300.000₫" },
+    { name: "Chuột", info: "CHUỘT KHÔNG DÂY ATTACK SHARK X3", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/at7-jpeg-1702372754595.jpg?v=1709118955690", price: "1.300.000₫" },
+    { name: "Chuột", info: "CHUỘT KHÔNG DÂY ATTACK SHARK X3", img: "https://bizweb.dktcdn.net/thumb/1024x1024/100/436/596/products/1-1696133505980.png?v=1696133512800", price: "1.500.000₫" },
+
+
+
+
+]
+function getmouse() {
+    return mouse;
+}
 function getdata() {
     return data_pr;
 }
